@@ -100,7 +100,7 @@ function Login() {
 						Platforms With 30.000+ Users
 					</h2>
 					<p className="text-dark text-opacity-60">
-						Transfering money is eassier than ever, you can access
+						Transfering money is easier than ever, you can access
 						FazzPay wherever you are. Desktop, laptop, mobile phone?
 						we cover all of that for you!
 					</p>
