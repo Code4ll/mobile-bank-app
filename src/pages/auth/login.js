@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react";
-
 import Link from "next/link";
 import { useRouter } from "next/router";
 import { useDispatch, useSelector } from "react-redux";
@@ -42,7 +41,7 @@ function Login() {
 	};
 
 	const submitHandler = async (e) => {
-		e.preventDefault();
+		e.preventDefault();a
 		if (!form.email || !form.password || isLoading) return;
 		setIsLoading(true);
 		api.post("/auth/login", form)
@@ -50,6 +49,7 @@ function Login() {
 				setIsLoading(false);
 				const response = data?.data?.data;
 
+				
 				if (!response.pin) {
 					dispatch(
 						pinAction.setPin({
@@ -80,7 +80,7 @@ function Login() {
 				}
 				setError({
 					email: "Incorrect email 82 or password",
-					password: "Incorrect email or password 83",
+					password: "Incorrect email or password 83",L
 				});
 				// console.log(error);
 			});
